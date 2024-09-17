@@ -2,12 +2,16 @@
 ### GIT
 ### Permet d'ajouter des packages
 
-docker build -t exo1 -f dockerfile_1 .
-docker run -itd exo1 /bin/sh
+On crée une image grâce aux infos du dockerfile
+```docker build -t exo1 -f dockerfile_1 .```
+
+On crée un container grâce à l'image créée.
+```docker run -itd exo1 /bin/sh```
 
 Regarde l'id renvoyé et prends les 4 premiers caractères
 
-docker attach xxxx
+On ouvre le container
+```docker attach xxxx```
 
 # Dockerfile 2 
 ### ADD
@@ -19,8 +23,8 @@ La meme que le 1
 ### COPY
 ### Créer un serveur web en copiant un index.html en local
 
-docker build -t exo3 -f dockerfile_3 .
-docker container run -d --rm --name myapp -p 80:80 exo3
+```docker build -t exo3 -f dockerfile_3 .```
+```docker container run -d --rm --name myapp -p 80:80 exo3```
 
 Ouvrir une page internet avec localhost
 
