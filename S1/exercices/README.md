@@ -40,4 +40,21 @@ Cela affiche directement la commande "top"
 ### ENTRYPOINT
 ### Permet d'executer des commandes avec parametres au run de l'image
 
-Cela affiche "Yo, ton instruction ENTRYPOINT est ici !"
+1/ Cela affiche "Yo, ton instruction ENTRYPOINT est affiché depuis un echo !"
+2/ Cela affiche "Yo, ton instruction ENTRYPOINT est affiché depuis un shell !"
+
+On peux aussi faire cela : ```docker container run --entrypoint "/bin/echo" exo "Salut"```
+
+La différence entre CMD et ENTRYPOINT c'est que ENTRYPOINT configure le conteneur en tant qu'executable 
+
+# Dockerfile 6
+### WORKDIR
+### Permet de définir le repertoire de travail
+
+On peux faire :
+
+```docker run -it exo pwd```
+
+Pour voir où on se trouve après le lancement
+
+Cela peut aussi créer les dossier s'il n'existent pas

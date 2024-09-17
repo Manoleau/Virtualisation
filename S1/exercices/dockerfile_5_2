@@ -1,0 +1,4 @@
+FROM alpine:3.5
+LABEL maintainer="ManoloGGEZ"
+
+ENTRYPOINT echo "Yo, ton instruction ENTRYPOINT est affiché depuis un shell !"
