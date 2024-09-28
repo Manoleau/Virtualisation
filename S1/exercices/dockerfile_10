@@ -1,0 +1,5 @@
+FROM nginx:alpine
+LABEL maintainer="ManoloGGEZ"
+
+VOLUME /myvol
+CMD [ "nginx","-g","daemon off;" ]

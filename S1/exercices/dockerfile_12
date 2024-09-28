@@ -1,0 +1,7 @@
+FROM alpine:3.9.3
+LABEL maintainer="ManoloGGEZ"
+
+LABEL "com.example.vendor"="Manolo's INC"
+LABEL com.example.label-with-value="oui"
+LABEL version="1.0"
+LABEL description="Cet description montre \ qu'on peut faire plusieurs lignes"

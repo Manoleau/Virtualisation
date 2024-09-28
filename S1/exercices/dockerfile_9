@@ -1,0 +1,6 @@
+FROM alpine:3.9.3
+LABEL maintainer="ManoloGGEZ"
+
+ENV WELCOME_MESSAGE="Bienvenue mec"
+
+CMD ["sh", "-c", "echo $WELCOME_MESSAGE"]

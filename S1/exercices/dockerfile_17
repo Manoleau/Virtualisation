@@ -1,0 +1,6 @@
+FROM alpine:3.9.3
+LABEL maintainer="ManoloGGEZ"
+
+RUN groupadd -r redis && useradd -r -g redis redis
+USER redis
+RUN [ "redis-server" ]
